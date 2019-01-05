@@ -1,7 +1,11 @@
 ﻿body
 {
     font-family:Raleway;
-    margin-right: 50px;
+    margin-right: 3.5vw;
+}
+
+.container-fluid{
+    padding: 0px;
 }
 
 /* Header*/
@@ -11,7 +15,8 @@
     margin-left: -5px;
     margin-top: -5px;
     z-index:10; 
-    
+    width: 38vw;
+    height: 100vh;
 }
 
 
@@ -22,19 +27,25 @@
 
 #navbar{
     width: 100%;
-    padding-left:0;
-    font-size:15px;
+    padding: 0 0 0 0;
+    font-size:1.1vw;
     margin-top: 10vh;
     margin-bottom: 13vh;
+    background-color: white;
 }
+
+.navbar-custom {
+    background-color: #ff5500;
+}
+
 
 li {
     display: inline-block;
     color: white;
-    width: 11.5vw;
+    width: 11vw;
     height: 10vh;
     background-color: #78C4C6;
-    margin-left: 1.19vw;
+    margin-left: 1.79vw;
     text-transform: uppercase;
     vertical-align: middle;
     cursor: pointer;
@@ -50,7 +61,7 @@ li:first-child{
     vertical-align: middle;
 }
 
-li:hover {
+li:hover, .active {
     background-color: #17A1A5;
 }
 
