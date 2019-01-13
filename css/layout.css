@@ -1,73 +1,127 @@
-﻿body
+body
 {
     font-family:Raleway;
-    margin-right: 50px;
+    margin-right: 3.5vw;
+    min-height: 100%;
+}
+
+.checkitButton {
+    background-color: #78C4C6;
+    border: none;
+    color: white;
+    padding: 2vmin 3vmin;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4em;
+    z-index:20;
+    transition: background-color 0.5s;
+}
+
+.checkitButton:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #17A1A5;
+}
+
+i{
+    padding-left: 1vw;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+}
+
+.container-fluid{
+    padding: 0px;
 }
 
 /* Header*/
-
-#logo{
-    position: fixed;
-    margin-left: -5px;
-    margin-top: -5px;
-    z-index:10; 
-    
+.link{
+    position:fixed;
+    top:0;
+    width:30vw;
+    height: 40vh;
 }
 
 
+#logo{
+    position: fixed;
+    margin-left: -6px;
+    margin-top: -6px;
+    top: 0; 
+    width: 38vw;
+    height: 30vh;
+}
 
+
+/* Kontener */
+div.content{
+    margin-top: 3vh;
+}
 
 
 /* Nawigacja */
 
 #navbar{
     width: 100%;
-    padding-left:0;
-    font-size:15px;
+    padding: 0 0 0 0;
+    font-size:1.1vw;
+    margin-top: 10vmin;
+    margin-bottom: 2vmin;
+    background-color: white;
+    z-index:20;
+}
+#carouselExampleIndicators{
     margin-top: 10vh;
-    margin-bottom: 13vh;
 }
 
-li {
+.navbar-nav li{
     display: inline-block;
     color: white;
-    width: 11.5vw;
+    width: 11vw;
     height: 10vh;
     background-color: #78C4C6;
-    margin-left: 1.19vw;
+    margin-left: 1.79vw;
     text-transform: uppercase;
-    vertical-align: middle;
-    cursor: pointer;
 }
 
-li:first-child{
+.navbar-nav li a{
+    display: block;
+    color: white;
+    height: 100%;
+    padding-top: 3vh;
+}
+
+.navbar-nav .current_page_item{
+    background-color: #17A1A5;
+}
+
+
+.navbar-nav li:first-child{
     margin-left:0;
 }
 
-.tabtext {
-    height: 100%;
-    padding-top: 3vh;
-    vertical-align: middle;
-}
-
-li:hover {
+.navbar-nav li a:hover, .active {
     background-color: #17A1A5;
+    text-decoration: none;
+    color: white;
 }
 
 /* Teaching */
 
 #teaching {
-    display: table;
     width: 24vw;
     height: 30vh;
-    position: absolute;
-    margin-top: 22vh;
+    position: fixed;
+    margin-top: 55vh;
+    z-index:-1;
     background-color: #006468;
 }
 
 .teachinginside {
     display: table-cell;
-    margin-top: 20vh;
+    margin-top: 15vh;
     padding-left: 10%;
     color: white;
     font-size: 22px;
@@ -80,8 +134,8 @@ li:hover {
 
 #foot {
     position: fixed;
-    margin-top: 8.5vh;
-    height: 7vh;
+    bottom:0;
+    height: 7vmin;
     width: 100%;
     background-color: #B3D9DA;
     color: white;
@@ -89,36 +143,99 @@ li:hover {
 
 .footerinfo{
     display: inline-block;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 2vh;
     margin-left: 2vw;
+}
+
+
+.contact{
+    font-size: 0.9em;
+    float: right;
+    margin-right: 3.5vw;
+    text-align: right;
+    color: #17A1A5;
+}
+
+.fb{
+    display: inline-block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    height: 100%;
+    float: right;
+    margin-right: 3%;
+}
+
+.fb :hover{
+    opacity: 0.7;
 }
 
 
 
 
 /* Post*/
-#post {
+ #post1, #post2, #post3 {
     width: 100%;
     height: 52vh;
     background-color: #17A1A5;
     display: table;
 }
 
-#post:hover {
+ .carousel-item:hover {
     background-color: #78C4C6;
     opacity: 0.8;
     cursor: pointer;
 }
-
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    z-index: 100;
+}
 
 .half{
+    position: relative;
     display: table-cell;
     width: 50%;
     height: 100%;
 }
-.picture{
+
+.more{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    background: black;
+    opacity: 0.7;
+    font-size: 0.5em;
+    text-align: right;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-transform: uppercase;
+}
+.more:hover{
+    opacity:1;
+}
+
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+}
+
+
+.picture1{
     background-image: url("../images/car.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.picture2{
+    background-image: url("../images/kiatest.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.picture3{
+    background-image: url("../images/rio.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -128,7 +245,197 @@ li:hover {
     padding-right: 3vw;
     vertical-align: middle;
     color: white;
-    font-size: 26px;
+    font-size: 28px;
 }
 
 
+
+.container-fluid {
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pagetitle{
+    display: none;
+}
+
+
+#map{
+    width: 50vmin; 
+    height: 50vmin;
+    margin-right: 3vmin;
+}
+
+
+td{
+    border: solid white 4px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.navbar-brand{
+    visibility: hidden;
+}
+
+thead tr{color: white; background:#006468;}
+tbody tr:nth-child(n+1) {background: #B3D9DA}
+tbody tr:nth-child(2n+1) {background: #78C4C6}
+
+
+
+/************************ Mobile *****************/
+@media(max-width: 992px)
+{
+table{
+    margin-bottom: 15vmin;
+}
+.navbar-brand{
+    visibility: visible;
+}
+
+#foot{
+    z-index: 2;
+}
+
+#logo{
+    z-index:5;
+}
+
+        h3{
+            font-size: 1.4em;
+        }
+
+        #map{
+            display: block;
+            width: 100%;
+            margin-left: auto; 
+            margin-right: auto;
+            margin-bottom: 5vmin;
+        }
+
+        div.content{
+            font-size: 1em;
+            text-align: justify;
+            hyphens: auto;
+            height: 74vh;
+            font-weight: 250;
+            margin-top: 15vh;
+            margin-bottom: 3vh;
+            padding-bottom: 3vmin;
+        }
+
+    .pagetitle{
+        z-index:9;
+        display: block;
+        text-align: center;
+        background-color: #17A1A5;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        text-align: center;
+    }
+    .title{
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: white;
+        font-weight: 300;
+        font-size: 1.6em; 
+    }
+
+    .bg-white{
+        background-color: #17A1A5!important;
+    }
+
+    .navbar-toggler{
+        margin-right: 6vw;
+        font-size: 7em;
+        border: none;
+    }
+    body{
+        margin-left:0;
+        margin-right: 0;
+        padding-right: 15px;
+    }
+    .fb{
+        float:left;
+        padding: 0 0 0 7px;
+        display: inline-block;
+    }
+    #navbar{
+    z-index: 11;
+    background-color:#17A1A5;
+    margin-top: 4vmin;
+    position: fixed;
+    /*margin-bottom: 13vh; */
+
+    }
+
+    .contact{
+        font-size: 1em;
+    }
+
+    .navbar-nav li{
+    width: 100%;
+    height: 10vh;
+    margin-left:0;
+    text-transform: uppercase;
+    font-size: 4vmin;
+    }
+
+    .navbar-nav li:first-child{
+        margin-left: 0;
+    }
+
+    .navbar-nav li a{
+    display: block;
+    color: white;
+    height: 100%;
+    padding-top: 3vh;
+    }
+
+    #post1, #post2, #post3 {
+    height: 26vh;
+    }
+
+    .info{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 4vmin;
+    }
+
+    .mobilecarousel{
+    width: 100%;
+    height: 26vh;
+    background-color: #17A1A5;
+    box-sizing: border-box;
+    border: 10px solid #17A1A5;
+    border-top: 0px;
+    }
+
+    .left{
+        background: white;
+        text-align: center;
+        color: black;
+        font-size: 4vmin;
+        text-transform: uppercase;
+    }
+
+    .mobilelogo{
+        position: absolute;
+        top:0;
+        margin-left: 6px;
+        margin-top: 0px;
+        background: #17A1A5;
+        width: 100vw;
+        height: 22.5vmin;
+    }
+
+        #carouselExampleIndicators{
+    margin-top: 26vh;
+    z-index:2;
+}
+
+}
