@@ -2,6 +2,7 @@ body
 {
     font-family:Raleway;
     margin-right: 3.5vw;
+<<<<<<< HEAD
     min-height: 100%;
 }
 
@@ -30,6 +31,8 @@ i{
 
 h1, h2, h3, h4, h5, h6{
     text-align: center;
+=======
+>>>>>>> 3b0b5cabf17876c897f37545087c0c7f7c279427
 }
 
 .container-fluid{
@@ -47,11 +50,19 @@ h1, h2, h3, h4, h5, h6{
 
 #logo{
     position: fixed;
+<<<<<<< HEAD
     margin-left: -6px;
     margin-top: -6px;
     top: 0; 
     width: 38vw;
     height: 30vh;
+=======
+    margin-left: -5px;
+    margin-top: -5px;
+    z-index:10; 
+    width: 38vw;
+    height: 100vh;
+>>>>>>> 3b0b5cabf17876c897f37545087c0c7f7c279427
 }
 
 
@@ -67,6 +78,7 @@ div.content{
     width: 100%;
     padding: 0 0 0 0;
     font-size:1.1vw;
+<<<<<<< HEAD
     margin-top: 10vmin;
     margin-bottom: 2vmin;
     background-color: white;
@@ -77,6 +89,19 @@ div.content{
 }
 
 .navbar-nav li{
+=======
+    margin-top: 10vh;
+    margin-bottom: 13vh;
+    background-color: white;
+}
+
+.navbar-custom {
+    background-color: #ff5500;
+}
+
+
+li {
+>>>>>>> 3b0b5cabf17876c897f37545087c0c7f7c279427
     display: inline-block;
     color: white;
     width: 11vw;
@@ -93,7 +118,11 @@ div.content{
     padding-top: 3vh;
 }
 
+<<<<<<< HEAD
 .navbar-nav .current_page_item{
+=======
+li:hover, .active {
+>>>>>>> 3b0b5cabf17876c897f37545087c0c7f7c279427
     background-color: #17A1A5;
 }
 

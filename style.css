@@ -2,6 +2,7 @@
 Theme Name: JuvexPage
 Author: Dawid Buliński
 Description: Template for OSK Juvex
+<<<<<<< HEAD
 Version: 0.9.1
 Tags: bootstrap, school, driving, driving license
 */
@@ -35,3 +36,8 @@ figure.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: rgb(23,161,165);
 }
+=======
+Version: 0.0.1
+Tags: bootstrap, school, driving, driving license
+*/
+>>>>>>> 3b0b5cabf17876c897f37545087c0c7f7c279427
