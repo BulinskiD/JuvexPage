@@ -2,15 +2,46 @@ body
 {
     font-family:Raleway;
     margin-right: 3.5vw;
+<<<<<<< HEAD
     min-height: 100%;
 }
 
+=======
+<<<<<<< HEAD
+    min-height: 100%;
+}
+
+.checkitButton {
+    background-color: #78C4C6;
+    border: none;
+    color: white;
+    padding: 2vmin 3vmin;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4em;
+    z-index:20;
+    transition: background-color 0.5s;
+}
+
+.checkitButton:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #17A1A5;
+}
+
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
 i{
     padding-left: 1vw;
 }
 
 h1, h2, h3, h4, h5, h6{
     text-align: center;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 3b0b5cabf17876c897f37545087c0c7f7c279427
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
 }
 
 .container-fluid{
@@ -18,8 +49,16 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Header*/
+.link{
+    position:fixed;
+    top:0;
+    width:30vw;
+    height: 40vh;
+}
+
 
 #logo{
+<<<<<<< HEAD
     position: absolute;
     margin-left: -6px;
     margin-top: -6px;
@@ -27,13 +66,33 @@ h1, h2, h3, h4, h5, h6{
     top: 0; 
     width: 38vw;
     height: 30vh;
+=======
+    position: fixed;
+<<<<<<< HEAD
+    margin-left: -6px;
+    margin-top: -6px;
+    top: 0; 
+    width: 38vw;
+    height: 30vh;
+=======
+    margin-left: -5px;
+    margin-top: -5px;
+    z-index:10; 
+    width: 38vw;
+    height: 100vh;
+>>>>>>> 3b0b5cabf17876c897f37545087c0c7f7c279427
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
 }
 
 
 /* Kontener */
 div.content{
+<<<<<<< HEAD
     overflow-y: scroll;
     height: 60vh;
+=======
+    margin-top: 3vh;
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
 }
 
 
@@ -43,6 +102,7 @@ div.content{
     width: 100%;
     padding: 0 0 0 0;
     font-size:1.1vw;
+<<<<<<< HEAD
     margin-top: 10vmin;
     margin-bottom: 13vh;
     background-color: white;
@@ -50,6 +110,32 @@ div.content{
 }
 
 li{
+=======
+<<<<<<< HEAD
+    margin-top: 10vmin;
+    margin-bottom: 2vmin;
+    background-color: white;
+    z-index:20;
+}
+#carouselExampleIndicators{
+    margin-top: 10vh;
+}
+
+.navbar-nav li{
+=======
+    margin-top: 10vh;
+    margin-bottom: 13vh;
+    background-color: white;
+}
+
+.navbar-custom {
+    background-color: #ff5500;
+}
+
+
+li {
+>>>>>>> 3b0b5cabf17876c897f37545087c0c7f7c279427
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
     display: inline-block;
     color: white;
     width: 11vw;
@@ -59,15 +145,38 @@ li{
     text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 li a{
+=======
+.navbar-nav li a{
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
     display: block;
     color: white;
     height: 100%;
     padding-top: 3vh;
 }
 
+<<<<<<< HEAD
 .navbar-nav .current_page_item{
+=======
+<<<<<<< HEAD
+.navbar-nav .current_page_item{
+=======
+li:hover, .active {
+>>>>>>> 3b0b5cabf17876c897f37545087c0c7f7c279427
     background-color: #17A1A5;
+}
+
+
+.navbar-nav li:first-child{
+    margin-left:0;
+}
+
+.navbar-nav li a:hover, .active {
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
+    background-color: #17A1A5;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -86,8 +195,14 @@ li a:hover, .active {
 #teaching {
     width: 24vw;
     height: 30vh;
+<<<<<<< HEAD
     position: absolute;
     margin-top: 55vh;
+=======
+    position: fixed;
+    margin-top: 55vh;
+    z-index:-1;
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
     background-color: #006468;
 }
 
@@ -153,7 +268,11 @@ li a:hover, .active {
     display: table;
 }
 
+<<<<<<< HEAD
  #post1:hover, #post2:hover, #post3:hover {
+=======
+ .carousel-item:hover {
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
     background-color: #78C4C6;
     opacity: 0.8;
     cursor: pointer;
@@ -218,6 +337,8 @@ li a:hover, .active {
     vertical-align: middle;
     color: white;
     font-size: 28px;
+<<<<<<< HEAD
+=======
 }
 
 
@@ -228,9 +349,118 @@ li a:hover, .active {
     margin-left: auto;
 }
 
+.pagetitle{
+    display: none;
+}
+
+
+#map{
+    width: 50vmin; 
+    height: 50vmin;
+    margin-right: 3vmin;
+}
+
+
+td{
+    border: solid white 4px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.navbar-brand{
+    visibility: hidden;
+}
+
+thead tr{color: white; background:#006468;}
+tbody tr:nth-child(n+1) {background: #B3D9DA}
+tbody tr:nth-child(2n+1) {background: #78C4C6}
+
+
+
 /************************ Mobile *****************/
 @media(max-width: 992px)
 {
+table{
+    margin-bottom: 15vmin;
+}
+.navbar-brand{
+    visibility: visible;
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
+}
+
+#foot{
+    z-index: 2;
+}
+
+<<<<<<< HEAD
+
+.container-fluid {
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/************************ Mobile *****************/
+@media(max-width: 992px)
+{
+=======
+#logo{
+    z-index:5;
+}
+
+        h3{
+            font-size: 1.4em;
+        }
+
+        #map{
+            display: block;
+            width: 100%;
+            margin-left: auto; 
+            margin-right: auto;
+            margin-bottom: 5vmin;
+        }
+
+        div.content{
+            font-size: 1em;
+            text-align: justify;
+            hyphens: auto;
+            height: 74vh;
+            font-weight: 250;
+            margin-top: 15vh;
+            margin-bottom: 3vh;
+            padding-bottom: 3vmin;
+        }
+
+    .pagetitle{
+        z-index:9;
+        display: block;
+        text-align: center;
+        background-color: #17A1A5;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        text-align: center;
+    }
+    .title{
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: white;
+        font-weight: 300;
+        font-size: 1.6em; 
+    }
+
+    .bg-white{
+        background-color: #17A1A5!important;
+    }
+
+    .navbar-toggler{
+        margin-right: 6vw;
+        font-size: 7em;
+        border: none;
+    }
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
     body{
         margin-left:0;
         margin-right: 0;
@@ -242,6 +472,7 @@ li a:hover, .active {
         display: inline-block;
     }
     #navbar{
+<<<<<<< HEAD
         z-index: 9;
     }
 
@@ -250,6 +481,21 @@ li a:hover, .active {
     }
 
     li{
+=======
+    z-index: 11;
+    background-color:#17A1A5;
+    margin-top: 4vmin;
+    position: fixed;
+    /*margin-bottom: 13vh; */
+
+    }
+
+    .contact{
+        font-size: 1em;
+    }
+
+    .navbar-nav li{
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
     width: 100%;
     height: 10vh;
     margin-left:0;
@@ -257,11 +503,19 @@ li a:hover, .active {
     font-size: 4vmin;
     }
 
+<<<<<<< HEAD
     li:first-child{
         margin-left: 0;
     }
 
     li a{
+=======
+    .navbar-nav li:first-child{
+        margin-left: 0;
+    }
+
+    .navbar-nav li a{
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
     display: block;
     color: white;
     height: 100%;
@@ -284,6 +538,10 @@ li a:hover, .active {
     background-color: #17A1A5;
     box-sizing: border-box;
     border: 10px solid #17A1A5;
+<<<<<<< HEAD
+=======
+    border-top: 0px;
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
     }
 
     .left{
@@ -293,9 +551,26 @@ li a:hover, .active {
         font-size: 4vmin;
         text-transform: uppercase;
     }
+<<<<<<< HEAD
     button.navbar-togler{
     font-size: 1.8rem;
     margin-right: 15px;
+=======
+
+    .mobilelogo{
+        position: absolute;
+        top:0;
+        margin-left: 6px;
+        margin-top: 0px;
+        background: #17A1A5;
+        width: 100vw;
+        height: 22.5vmin;
+    }
+
+        #carouselExampleIndicators{
+    margin-top: 26vh;
+    z-index:2;
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
 }
 
 }

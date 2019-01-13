@@ -66,7 +66,10 @@ function custom_settings_page_setup() {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
 function links() {
     wp_enqueue_style('bootstrap4', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
     wp_enqueue_style('faicons', 'https://use.fontawesome.com/releases/v5.4.2/css/all.css');
@@ -78,6 +81,19 @@ function links() {
 }
 
 
+<<<<<<< HEAD
+=======
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+function clean_script_tag( $input ) {
+    $input = str_replace( "type='text/javascript' ", '', $input );
+
+    return str_replace( "'", '"', $input );
+}
+
+add_filter( 'links', 'clean_script_tag'  );
+>>>>>>> ffd6dd803652445b2a9212a9ecae47e8b06ba2d0
 
 
 
